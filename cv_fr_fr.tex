@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage[utf8]{inputenc}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+% d'autres valeurs possibles
+%\moderncvstyle{casual}
+%\moderncvstyle{oldstyle}
+%\moderncvstyle{banking}
+% une autre manière de définir la couleur
+\moderncvcolor{blue}
+% couleurs possibles : 'blue' (par defaut),
+% 'orange', 'green', 'red', 'purple', 'grey' et 'black
+
+
+\usepackage[top=1.1cm, bottom=1.1cm, left=2cm, right=2cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{3.5cm}
+
+% personal data
+\name{Adrien}{Guilbaud}
+\title{Développement HPC}
+\address{3 bis allée Jean Griffon}{31400 Toulouse}{France}
+\phone[mobile]{+33 (0)6~15~39~25~18}
+\email{adrien.guilbaud33@gmail.com}
+\social[linkedin]{adrien-guilbaud}
+\extrainfo{23 ans - Permis B}
+
+
+\begin{document}
+\makecvtitle
+
+%Expériences
+\section{Expériences}
+\cventry{10/2016--Aujourd'hui}{Ingénieur d'études}{Cerfacs}{Toulouse}{}{Amélioration des performances CPU pour les raccords non coïncidents dans le logiciel elsA.\newline{}%
+\begin{itemize}%
+\item Modification de la gestion des raccords entre les blocs permettant la réduction du nombre de communications MPI;
+\item Mise en place d'un ordonnanceur dynamique des messages MPI.
+\end{itemize}}
+
+\cventry{04/2016--09/2016}{Stagiaire}{Cerfacs}{Toulouse}{}{Passage en 3D et parallélisation de NTMIX\_CHEMKIN (simulation numérique directe de combustion turbulente).\newline{}%
+\begin{itemize}%
+\item Modernisation du code/gestion dynamique de la mémoire (Fortran77 vers Fortan90);
+\item Développement d'une version 3D;
+\item Parallélisation par décomposition et recouvrement de domaine (MPI).
+\end{itemize}}
+
+\cventry{2013}{Stagiaire}{Lafon}{Bassens}{}{Développement d’un algorithme de répartition de puissance électrique (SmartGrid)}
+
+%Formation
+\section{Formation}
+\cventry{2014-2016}{Master}{Université de Bordeaux}{Bordeaux}{\textit{Grade}}{Option CHP - Calcul Haute Performance}
+\cventry{2013-2014}{Licence}{Université de Bordeaux}{Bordeaux}{}{}
+\cventry{2011-2013}{DUT}{IUT de Bordeaux}{Bordeaux}{}{}
+
+%Compétences
+\section{Compétences}
+\cvitem{Langages de programmation}{C++, C, Fortran, Java, Python}
+\cvitem{Langages du parallélisme}{MPI, OpenMP, CUDA}
+\cvitem{Analyse}{UML, Merise}
+\cvitem{Outils}{Emacs, Sublime Text, Eclipse, Git, Gnuplot, \LaTeX}
+
+%Langages
+\section{Langages}
+\cvitem{Français}{Langue maternelle}
+\cvitem{Anglais}{Niveau C1}
+
+%Intérêts
+\section{Intérêts}
+\begin{cvcolumns}
+  \cvcolumn{}{\begin{itemize}\item Guitare\item Astronomie\item Parachutisme \end{itemize}}
+\end{cvcolumns}
+
+%Références
+\section{Références}
+\begin{cvcolumns}
+  \cvcolumn[0.28]{}{\begin{itemize}\item Marc Montagnac\item Isabelle D'ast \end{itemize}}
+  \cvcolumn[0.32]{}{\begin{itemize}\item +33 (0)5 61 19 30 48\item +33 (0)5 61 19 30 53\end{itemize}}
+  \cvcolumn{}{\begin{itemize}\item marc.montagnac@cerfacs.fr\item isabelle.dast@cerfacs.fr\end{itemize}}
+
+\end{cvcolumns}
+
+%\cventry{}{Marc Montagnac}{marc.montagnac@cerfacs.fr}{}{}{+33~(0)5~61~19~30~48}
+%\cventry{}{Isabelle D'ast}{isabelle.dast@cerfacs.fr}{}{}{+33~(0)5~61~19~30~53}
+\end{document}
